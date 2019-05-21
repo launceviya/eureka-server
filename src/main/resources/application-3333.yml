@@ -4,3 +4,7 @@ spring:
     active: 3333
 server:
   port: 3333
+eureka:
+  instance:
+    instance-id: ${spring.application.name}-${server.port}
+    appname: ${spring.application.name}
