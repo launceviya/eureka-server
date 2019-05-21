@@ -1,0 +1,6 @@
+#spring config#
+spring:
+  profiles:
+    active: 1111
+server:
+  port: 1111

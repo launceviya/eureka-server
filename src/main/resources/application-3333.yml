@@ -1,0 +1,6 @@
+#spring config#
+spring:
+  profiles:
+    active: 3333
+server:
+  port: 3333

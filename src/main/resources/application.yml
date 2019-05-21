@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ly-eureka-server
+#eureka config#
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.101:1111/eureka
+  instance:
+    appname: ${spring.application.name}
+    instance-id: ${spring.application.name}-${server.port}
+    prefer-ip-address: true

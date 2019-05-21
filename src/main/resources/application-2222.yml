@@ -1,0 +1,6 @@
+#spring config#
+spring:
+  profiles:
+    active: 2222
+server:
+  port: 2222
