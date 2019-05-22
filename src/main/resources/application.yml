@@ -4,12 +4,15 @@ spring:
 #eureka config#
 eureka:
   client:
+    prefer-same-zone-eureka: true
+      region: tianjin
+#      availability-zones:
+#        tianjin: tj-zone-1,tj-zone-2
     service-url:
-      defaultZone: http://192.168.1.97:1111/eureka
-    register-with-eureka: true
-    fetch-registry: true
+      defaultZones: http://192.168.1.112:1111/eureka
   instance:
     appname: ${spring.application.name}
     prefer-ip-address: true
-    instance-id: ly-eureka-server
+    status-page-url-path: /actuator/info
+    health-check-url-path: /actuator/health
 

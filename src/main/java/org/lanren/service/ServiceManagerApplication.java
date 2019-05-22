@@ -1,4 +1,4 @@
-package org.lanren.idgenerator;
+package org.lanren.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
